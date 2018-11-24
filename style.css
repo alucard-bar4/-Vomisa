@@ -1,0 +1,452 @@
+@font-face {
+    font-family: Proxima;
+    src: url(/fonts/ProximaNova-Regular.ttf);
+}
+
+@font-face {
+    font-family: ProximaThin;
+    src: url(/fonts/ProximaNovaT-Thin.ttf);
+}
+
+@font-face {
+    font-family: ProximaCondRegular;
+    src: url(/fonts/ProximaNovaCond-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Proxima;
+}
+
+header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 86px;;
+    background: white;
+}
+
+.header-inn {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logoPlaces {
+    position: relative;
+    left: 20px;
+    margin: auto 0;
+    color: #020e2c;
+}
+
+#logoImg {
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+#logoImg img {
+    position: relative;
+    height: auto;
+    top: 0px;
+    width: 140px;
+    flex-direction: row;
+}
+
+#headersNav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate( 0%, -50%);
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    vertical-align: middle;
+}
+
+a:hover, a:active, a:focus, a:visited, a {
+    text-decoration: none; 
+    color: #020e2c;
+}
+
+.navLinks {
+    display: inline-flex;
+    padding: auto;
+}
+
+.navLinks a {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #020e2c;
+    padding: 0 14px;
+}
+
+.joinUsBtn {
+    position: relative;
+    border-radius: 300px;
+    margin: 0 18px;
+    right: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.joinUsBtn a {
+    border: 2px solid #020e2c;
+    border-radius: 400px;
+    padding: 13px 19px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.joinUsBtn a:hover {
+    text-decoration-color: #fff;
+    background-color: black;
+    border: 2px solid grey;
+    color: #fff;
+    cursor: pointer;
+    animation-direction: alternate;
+}
+
+/*  need to figure out the @media thing for lil screen, 
+    help me master! */
+figure {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    z-index: -3;    
+    /* overflow: hidden; */
+}
+
+figure img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -292.033px;
+}
+
+main {
+    display: flex;
+    position: relative;
+    top: 116px;
+    background: white;
+}
+
+#content {
+    position: relative;
+    display: block;
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2em;
+    color: #020e2c;  
+}
+
+.article {
+    display: block;
+    position: relative;
+    margin: 95px auto 95px auto;
+    width: 70%;
+}
+
+.blogImage {
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.blogImage img {
+    position: relative;
+    width: 100%;
+}
+
+.blogText {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    font-size: 4.5vmax;
+    padding: 0 20%;
+    color: white;
+    pointer-events: none;
+    font-weight: 900;
+    letter-spacing: .05em;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 rgb(90, 90, 90),
+    0 3px 0 rgb(50, 50, 50),
+    0 4px 0 rgb(40, 40, 40),
+    0 5px 0 rgb(30, 30, 30),
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.imgAuthor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 250px;
+    font-size: 1.5vmax;
+    color: white;
+    pointer-events: none;
+    font-weight: 500;
+}
+
+.RMbutton {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 310px;
+    font-size: 1.2vmax;
+    font-weight: 500;
+}
+
+.RMbutton a {
+    padding: 13px 28px;
+    background: white;
+    border-radius: 300px;
+    transition: all .5s ease;
+    /* transition-property: 
+        color, background, border, border-radius;
+    transition-duration: .5s;
+    transition-timing-function: 
+        cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.RMbutton a:hover {
+    color: white;    
+    background: none;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.newsQuote {
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 94%;
+    margin: auto;
+    font-size: 31px;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: .7;
+}
+
+.qThing {
+    display: block;
+    text-align: center;
+    font-size: 90px;
+    opacity: .48;
+    margin-top: 100px;
+}
+
+.qThingtwo {
+    display: block;
+    text-align: center;
+    font-size: 90px;
+    opacity: .48;
+    margin-top: 40px;
+}
+
+.mit {
+    position: relative;
+    font-size: 25px;
+    top: -60px;
+    opacity: .8;
+}
+
+.contentSecond {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-text {
+    text-align: center;
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: bold;
+    padding: 35px;
+    opacity: .7;
+}
+
+.contentThird {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;  
+    font-size: 28px;
+    padding: 30px;
+}
+
+.hireBtn {
+    margin: auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 233px;
+    font-weight: 600;
+    height: 74px;
+    color: white;
+    background-color: #272727;
+    border: none;
+    transition: all .5s ease;
+}
+
+.hireBtn a {
+    color: white;
+}
+
+.hireBtn:hover {
+    background: black;
+    border: 3px solid white;
+    border-radius: 300px;
+    box-shadow: 0px 0px 70px 5px #000000;
+}
+
+.blogLink {
+    position: relative;
+    margin: 35px auto 10px auto;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.blogLink a {
+    color: rgb(0, 132, 255);
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.blogLink a:hover {
+    color: #000000;
+    text-shadow: 
+        0 0 1px rgb(36, 36, 36), 0 0 18px rgb(0, 81, 255);
+}
+
+.followicons {
+    display: inline-flex;
+    position: relative;    
+    width: 75%;  
+    transition: all .5s ease;
+}
+
+.followicons a {
+    margin: 25px 5px 0px 5px;   
+ 
+}
+
+.followicons img:hover {
+    box-shadow: 1px 1px 20px teal;
+    border-radius: 300px;
+    transition: .5s;
+}
+
+footer {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    background-color: #020e2c;
+}
+
+.subscribeBelow {
+    display: flex;
+    flex-direction: column;
+    background: #7d9bd9;
+    margin: 100px auto 33px auto; 
+    padding: 60px 220px;
+    color: white;
+    text-align: center;
+}
+
+.subsLine {
+   
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.subsInfo {
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+
+#email-input {
+    padding: 15px 70px 15px 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.signUp {
+    flex-direction: column;
+    padding: 16px 35px;
+    border: 0px;
+    color: white;
+    font-weight: 700;
+    border-radius: 300px;
+    background: #070070;
+    transition: all .5s ease;
+    margin-left: 1px;
+}
+
+.signUp:hover {
+    text-shadow: 0 0 1px rgb(36, 36, 36), 0 0 98px rgb(255, 255, 255);
+    border-radius: 0px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.footersEnd {
+    display: flex;
+    flex-direction: row;
+    color: rgb(218, 218, 218);
+    margin: 0 auto 65px auto;
+    text-align: right;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footersContentInn {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.footersContentInn a {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-light {
+    display: block;
+}
+
+.logo-light img {
+    width: 450px;
+}
